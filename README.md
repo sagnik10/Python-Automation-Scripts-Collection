@@ -1,152 +1,221 @@
-# Python-Automation-Scripts-Collection
+# Python-Automation-and-Core-Concepts-Practice
 
-A collection of practical Python automation scripts for social media, messaging, email, web tasks, and system-level automation.
+Comprehensive Python practice repository covering Selenium automation testing, OOP principles, generators, iterators, exception handling, file processing, and functional programming concepts.
 
 ---
 
 ## Overview
 
-This repository contains multiple Python-based automation scripts designed to automate repetitive digital tasks including:
+This repository contains structured Python practice scripts combining:
 
-- WhatsApp messaging automation  
-- Email automation  
-- Instagram automation  
-- YouTube automation  
-- SMS automation  
-- Web browser automation  
-- System-level task automation  
+- Selenium-based web automation testing
+- Pytest test configuration
+- Object-Oriented Programming (OOP)
+- Generators and iterators
+- Exception handling
+- File handling
+- Functional programming concepts
 
-The goal of this project is to demonstrate real-world automation workflows using Python.
+The project demonstrates both practical automation skills and strong Python fundamentals.
 
 ---
 
 ## Project Structure
 
 ```
-Python-Automation-Scripts-Collection/
+Python-Automation-and-Core-Concepts-Practice/
 
-├── whatsapp_automation.py
-├── email_automation.py
-├── instagram_automation.py
-├── youtube_automation.py
-├── sms_automation.py
-├── system_automation.py
-├── web_automation.py
+├── CartAutomation.py
+├── conftest.py
+├── Private#&ProtectedValidation.py
+├── LargeFileReading.py
+├── ReduceForProductOfList.py
+├── FinallyWithFileHandling.py
+├── MultipleExceptionUsingOneTryBlock.py
+├── ConvertedGenerator.py
+├── FibonacciGenerator.py
+├── CustomIteratorClass.py
 └── README.md
 ```
 
-(Note: File names may vary slightly depending on implementation.)
+---
+
+## 1. Selenium Automation Testing
+
+### CartAutomation.py
+Implements end-to-end automation testing for:
+
+- User registration
+- Login
+- Product selection
+- Cart validation
+- Checkout process
+
+Uses:
+- Selenium WebDriver
+- Explicit waits
+- Pytest framework
+- Dynamic test data generation
+
+### conftest.py
+Provides:
+
+- Pytest fixture for WebDriver setup
+- Browser selection via command line
+- Session-level driver management
+
+Run tests:
+
+```bash
+pytest --browser=chrome
+```
 
 ---
 
-## Features
+## 2. Object-Oriented Programming
 
-### 1. Messaging Automation
-- Automated WhatsApp message sending
-- Bulk messaging capability
-- Scheduled message execution
+### Private#&ProtectedValidation.py
 
-### 2. Email Automation
-- Automated email sending
-- Attachment support
-- SMTP integration
+Demonstrates:
 
-### 3. Social Media Automation
-- Instagram automation scripts
-- YouTube interaction automation
+- Protected variables
+- Private variables
+- Encapsulation
+- Property decorators
+- Getter and setter validation
+- AttributeError handling
 
-### 4. Web Automation
-- Browser automation using Selenium or similar tools
-- Automated web interactions
-- Form submission automation
+---
 
-### 5. System Automation
-- File handling automation
-- Task scheduling
-- OS-level command execution
+## 3. File Handling & Resource Management
+
+### FinallyWithFileHandling.py
+
+Demonstrates:
+
+- Using try/finally to safely close files
+- Proper file resource management
+
+### LargeFileReading.py
+
+Demonstrates:
+
+- Generator-based file reading
+- Memory-efficient large file processing
+
+---
+
+## 4. Exception Handling
+
+### MultipleExceptionUsingOneTryBlock.py
+
+Demonstrates:
+
+- Handling multiple exceptions in one block
+- ValueError
+- ZeroDivisionError
+
+---
+
+## 5. Functional Programming
+
+### ReduceForProductOfList.py
+
+Demonstrates:
+
+- functools.reduce
+- Lambda functions
+- Product calculation
+
+---
+
+## 6. Generators
+
+### ConvertedGenerator.py
+
+Demonstrates:
+
+- Yield-based generator
+- On-demand computation
+
+### FibonacciGenerator.py
+
+Implements:
+
+- Fibonacci sequence using generator
+
+---
+
+## 7. Custom Iterator
+
+### CustomIteratorClass.py
+
+Implements:
+
+- Custom iterator class
+- __iter__ method
+- __next__ method
+- StopIteration handling
 
 ---
 
 ## Technologies Used
 
 - Python
-- Selenium (for web automation)
-- smtplib (for email automation)
-- pywhatkit / webbrowser (for messaging automation)
-- OS and subprocess modules
+- Selenium
+- Pytest
+- Functional Programming Concepts
+- OOP Principles
 
 ---
 
-## Installation
-
-Clone the repository:
-
-```bash
-git clone https://github.com/your-username/Python-Automation-Scripts-Collection.git
-```
-
-Navigate to the directory:
-
-```bash
-cd Python-Automation-Scripts-Collection
-```
+## How to Run
 
 Install dependencies:
 
 ```bash
-pip install -r requirements.txt
+pip install selenium pytest
 ```
 
----
-
-## Usage
-
-Run individual scripts:
+Run automation tests:
 
 ```bash
-python whatsapp_automation.py
+pytest --browser=chrome
 ```
+
+Run individual concept scripts:
 
 ```bash
-python email_automation.py
+python LargeFileReading.py
+python FibonacciGenerator.py
 ```
 
-```bash
-python instagram_automation.py
-```
+---
 
-Modify credentials and configuration settings inside each script before execution.
+## Learning Areas Covered
+
+- Automation Testing
+- Web Interaction using Selenium
+- Python OOP
+- Encapsulation
+- Generators & Iterators
+- Exception Handling
+- File Processing
+- Functional Programming
 
 ---
 
-## Important Notes
+## Purpose
 
-- Some scripts require login credentials.
-- Do not hardcode sensitive credentials in public repositories.
-- Use environment variables for authentication where possible.
-- Ensure compliance with platform terms of service before automating actions.
+This repository serves as:
 
----
-
-## Use Cases
-
-- Task automation practice
-- Learning Python automation
-- Productivity enhancement
-- Demonstrating automation skills in portfolio projects
-
----
-
-## Future Improvements
-
-- GUI-based automation dashboard
-- Centralized configuration management
-- Secure credential management
-- Logging and monitoring system
-- Scheduling integration
+- Python fundamentals practice
+- Automation testing portfolio demonstration
+- Interview preparation resource
+- Structured coding concept reference
 
 ---
 
 ## License
 
-This repository is intended for educational and experimental purposes.
+This repository is intended for educational and practice purposes.
